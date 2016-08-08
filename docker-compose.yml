@@ -1,0 +1,13 @@
+---
+base:
+  build: .
+  tty: true
+  privileged: true
+  working_dir: /app/keyboard/sentraq-60x
+  volumes:
+    - ".:/app"
+
+make:
+  extends:
+    service: base
+  entrypoint: [make]
