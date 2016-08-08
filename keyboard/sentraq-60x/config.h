@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0xF0DA
+#define PRODUCT_ID      0x0666
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    pv
 #define PRODUCT         SENTRAQ-60X
@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 #define MATRIX_ROWS 5
-#define MATRIX_COLS 14
+#define MATRIX_COLS 15
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
