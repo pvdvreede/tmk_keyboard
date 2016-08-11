@@ -8,23 +8,23 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            LSFT,  NO,    Z,     X,     C,     V,     B,     N,     M,     COMM,  DOT,   SLSH,  NO,    RSFT, NO,     \
            LCTL,  LALT,  LGUI,            SPC,                                   FN1,   RGUI,  APP,   RCTL),
 
-    /* /1* 1: Other *1/ */
-    /* KEYMAP(GRV,   F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10,   F11,   F12,  DEL, \ */
-    /*             CAPS,  TRNS,  UP,    TRNS,  BSPC,  HOME,  PGUP,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \ */
-    /*             TRNS,  LEFT,  DOWN,  RIGHT, DEL,   END,   PGDN,  TRNS,  INS,   TRNS,  TRNS,  TRNS,         TRNS,  \ */
-    /*             TRNS,  MPRV,  MPLY,  MNXT,  VOLD,  VOLU,  MUTE,  TRNS,  TRNS,  TRNS,  TRNS,                TRNS, \ */
-    /*             TRNS,  TRNS,  TRNS,            TRNS,                                  TRNS,  TRNS,  TRNS,  TRNS), */
+    /* 1: Other */
+    KEYMAP(GRV,   F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10,   F11,   F12,   NO,   DEL,    \
+           CAPS,  TRNS,  UP,    TRNS,  BSPC,  HOME,  PGUP,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,         \
+           TRNS,  LEFT,  DOWN,  RIGHT, DEL,   END,   PGDN,  TRNS,  INS,   TRNS,  TRNS,  TRNS,  NO,    TRNS,         \
+           TRNS,  NO,    MPRV,  MPLY,  MNXT,  VOLD,  VOLU,  MUTE,  TRNS,  TRNS,  TRNS,  TRNS,  NO,    TRNS, NO,     \
+           TRNS,  TRNS,  TRNS,            TRNS,                                  TRNS,  TRNS,  TRNS,  TRNS),
 
-    /* /1* 2: Mouse *1/ */
-    /* KEYMAP(TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \ */
-    /*             TRNS,  BTN2,  MS_U,  BTN1,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \ */
-    /*             TRNS,  MS_L,  MS_D,  MS_R,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,         TRNS,  \ */
-    /*             TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                TRNS, \ */
-    /*             TRNS,  TRNS,  TRNS,            TRNS,                                  TRNS,  TRNS,  TRNS,  TRNS), */
+    /* 2: Mouse */
+    KEYMAP(TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  NO,   TRNS, \
+           TRNS,  BTN2,  MS_U,  BTN1,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \
+           TRNS,  MS_L,  MS_D,  MS_R,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  NO,    TRNS,  \
+           TRNS,  NO,    TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  NO,    TRNS, NO,   \
+           TRNS,  TRNS,  TRNS,            TRNS,                                  TRNS,  TRNS,  TRNS,  TRNS),
 };
 
 const uint16_t PROGMEM fn_actions[] = {
-  /* [0] = ACTION_LAYER_MOMENTARY(1), */
-  /* [1] = ACTION_LAYER_MOMENTARY(2), */
+  [0] = ACTION_LAYER_MOMENTARY(1),
+  [1] = ACTION_LAYER_MOMENTARY(2),
 };
 
